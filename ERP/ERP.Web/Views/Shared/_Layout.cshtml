@@ -1,0 +1,14 @@
+﻿
+
+@{
+    ViewBag.Title = "layout";
+    if (Session["ID"] == null)
+    {
+        Response.Redirect("~/Home/Login");
+    }
+
+}
+
+<h2>layout</h2>
+
+@RenderBody()
